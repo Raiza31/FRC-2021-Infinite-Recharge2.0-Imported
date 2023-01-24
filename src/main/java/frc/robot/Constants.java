@@ -34,5 +34,11 @@ public final class Constants {
         public static int kJoystick1 = 0;
         public static int kJoystick2 = 1;
     }
+
+
+    public static final class ClawConstants{
+        public static int kDoubleSolenoidLeftSlot = 0;
+        public static int kDoubleSolenoidRightSlot = 1;
+    }
 }
 
