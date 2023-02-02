@@ -2,24 +2,25 @@ package frc.robot.subsystems;
 
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
-import frc.robot.Constants.ClawConstants;
-import frc.robot.Constants.RobotMap;
+import frc.robot.Constants.FootConstants;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.PneumaticsModuleType;
 import static edu.wpi.first.wpilibj.DoubleSolenoid.Value.*;
 
 import edu.wpi.first.wpilibj.Compressor;
 
-public class Claw extends SubsystemBase{
+public class Foot extends SubsystemBase{
+
+
 
   private DoubleSolenoid pitchSolenoid;
 
-  public Claw(){
+  public Foot(){
 
-    pitchSolenoid = new DoubleSolenoid(PneumaticsModuleType.CTREPCM, ClawConstants.kDoubleSolenoidLeftSlot, ClawConstants.kDoubleSolenoidRightSlot);
+    pitchSolenoid = new DoubleSolenoid(PneumaticsModuleType.CTREPCM, FootConstants.kDoubleSolenoidLeftSlot, FootConstants.kDoubleSolenoidRightSlot);
 
         //------Double Solenoid setup------
-        //initalize the solenoid to start in the Forward Position
+        //initalize the solenoid to start in the Back Position
         pitchSolenoid.set(kReverse);
 
   }

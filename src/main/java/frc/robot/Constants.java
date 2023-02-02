@@ -26,8 +26,9 @@ public final class Constants {
         public static int kIntake = 6;
         public static int kConveyor = 7;
         public static int kShooter2 = 8;
-        public static int kLifter = 9;
+        public static int kElbow = 9;
         public static int kIntakeFollow = 10;
+        public static int kLiftArm = 11;
     }
 
     public static final class OIConstants{
@@ -39,6 +40,21 @@ public final class Constants {
     public static final class ClawConstants{
         public static int kDoubleSolenoidLeftSlot = 0;
         public static int kDoubleSolenoidRightSlot = 1;
+
     }
+
+    public static final class FootConstants{
+        public static int kDoubleSolenoidLeftSlot = 2;
+        public static int kDoubleSolenoidRightSlot = 3;
+        
+    }
+
+    public static final class LiftConstats{
+        
+    }
+    public static final class ElbowConstants{
+        public static int kElbow = 9;
+    
+  }
 }
 
