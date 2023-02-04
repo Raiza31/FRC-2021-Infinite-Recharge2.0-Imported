@@ -91,6 +91,8 @@ public class RobotContainer {
 
     ); 
 
+    //ELBOW CONTROLS
+
     new JoystickButton(joystick2, 6).whileTrue(
       new RunCommand(()->elbow.setPower((joystick2.getZ())*0.3), elbow));
 
